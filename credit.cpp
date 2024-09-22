@@ -9,18 +9,18 @@ int main()
     std::string cardNumber;
     int result = 0;
 
-    std::cout << "Enter a credit card #: ";
+    std::cout << "Enter a credit card number: ";
     std::cin >> cardNumber;
 
     result = sumEvenDigits(cardNumber) + sumOddDigits(cardNumber);
 
     if(result % 10 == 0)
     {
-        std::cout << "\nValid\n";
+        std::cout << "\nThe entered card number is Valid\n";
     }
     else
     {
-        std::cout << "\nNot Valid\n";
+        std::cout << "\nThe entered card number is Not Valid\n";
     }
 
     return 0;
